@@ -7,7 +7,7 @@
   --grey-back: #f5f4fa;
   --dark-back: #2f303a;
   --size-heder: 14px;
-  --height-heder: 1;
+  --height-heder: 24px;
 }
 
 
@@ -42,15 +42,12 @@ a {
 }
 
 .site-nav {
+  font-weight: 500;
   font-size: var(--size-heder);
   line-height: var(--height-heder);
 }
 
-.nav-item {
-  font-weight: 500;
-}
-
-.mail-header {
+.mail {
   color: var(--grey-text);
   font-size: var(--size-heder);
   line-height: var(--height-heder);
@@ -65,7 +62,8 @@ a {
 }
 
 .current {
-color: var(--accent-color);}
+  color: var(--accent-color);
+}
 
 .link {
   color: inherit;
@@ -215,14 +213,10 @@ img {
   padding: 94px 0;
 }
 
-.section-sec {
-padding-top: 0;
-}
-
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px 0 25px 0;
+  padding: 24px 0;
   }
 
 .header {
@@ -256,9 +250,9 @@ padding-top: 0;
   flex-direction: column;
   background-color: var(--dark-back);
   min-width: auto;
+  min-height: 600px;
   justify-content: center;
   align-items: center;
-  padding: 200px 0;
 }
 
 .hero {
@@ -283,10 +277,6 @@ padding-top: 0;
 
 .adv-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.adv-item {
-  flex-basis: calc((100% - (3*30px)) / 4);
 }
 
 /* чем мы занимаемся */
@@ -324,6 +314,15 @@ padding-top: 0;
 
 .name, .profession {
   text-align: center;
+}
+
+.name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.profession {
+  margin-bottom: 30px;
 }
 
 .section-name {
@@ -380,8 +379,17 @@ padding-top: 0;
 
 
 .portfolio-name {
-  color: var(--black-text);
+  margin-top: 20px;
   margin-bottom: 4px;
+  color: var(--black-text);
+}
+
+.portfolio-type {
+  margin-bottom: 20px;
+}
+
+.portfolio-name, .portfolio-type {
+  margin-left: 24px;
 }
 
 /* .portfolio-item:not(:nth-child(3n)) {
@@ -398,27 +406,16 @@ padding-top: 0;
   flex-basis: calc((100% - (3*30px)) / 3);
 }
 
-/* fixing bugs */
+/* the end of hw#3))) */
 
-button {
-  border: none;
-}
-
-.port-desc {
+.images {
+  object-fit: cover;
   width: 370px;
-  padding: 20px 24px;
-  border: 1px solid #EEEEEE;
-  border-top: none;
+  height: 294px;
 }
 
-.stuff-desc {
-  padding: 30px 0;
-}
+/* HW-4  */
 
-.name {
-  margin-bottom: 10px;
-}
-
-
-
-/* end))) */
+.stuff-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
+  
