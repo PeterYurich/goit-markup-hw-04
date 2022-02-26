@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #2196f3;
+  --accent-color: v;
   --black-text: #212121;
   --grey-text: #757575;
   --white-text: #ffffff;
@@ -424,10 +424,13 @@ button {
 
 
 .mail-header::before {
-  content: "";
-  background-color: #212121;
+  content: " ";
   display: inline-block;
-}
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/\/sprite-bw.svg#envelope);
+  background-size: contain;
+  }
 
 .adv-decor {
   width: 270px;
@@ -436,10 +439,46 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background-image: url(../images/rectangle.jpg);
+  border-radius: 4px;
 }
 
 .hero-css {
-  background-color: var(--dark-back);
-  background-image: url(..images/back-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4) ), 
+  url(../images/back-img.jpg);
+  background-size: cover;
+  background-color: #C4C4C4;
+  
+  }
+
+.socials {
+  display: flex;
+  width: 200px;
+  padding-top: 16px;
+  justify-content: space-between;
+  margin: auto;
 }
 
+.social-item {
+  width: 44px;
+  justify-content: ;
+}
+
+.social-icon {
+  width: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  background-color: var(--grey-back);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
