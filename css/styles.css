@@ -422,6 +422,13 @@ button {
 .stuff-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
 
+
+.mail-header::before {
+  content: "";
+  background-color: #212121;
+  display: inline-block;
+}
+
 .adv-decor {
   width: 270px;
   height: 120px;
@@ -431,16 +438,8 @@ button {
   margin-bottom: 30px;
 }
 
-.mail-header::before {
-  content: "";
-  width: 15;
-  height: 9;
-  background-color: #212121;
-  display: block;
-  flex-shrink: 0;
-}
-
 .hero-css {
   background-color: var(--dark-back);
   background-image: url(..images/back-img.jpg);
 }
+
