@@ -72,7 +72,7 @@ color: var(--accent-color);}
 }
 
 .hero {
-  background-color: var(--dark-back);
+  /* background-color: var(--dark-back); */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.16;
@@ -256,7 +256,6 @@ padding-top: 0;
 .hero-css {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-back);
   min-width: auto;
   justify-content: center;
   align-items: center;
@@ -422,4 +421,26 @@ button {
 
 .stuff-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
-  
+
+.adv-decor {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mail-header::before {
+  content: "";
+  width: 15;
+  height: 9;
+  background-color: #212121;
+  display: block;
+  flex-shrink: 0;
+}
+
+.hero-css {
+  background-color: var(--dark-back);
+  background-image: url(..images/back-img.jpg);
+}
