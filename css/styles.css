@@ -1,5 +1,5 @@
 :root {
-  --accent-color: v;
+  --accent-color: #2196f3;
   --black-text: #212121;
   --grey-text: #757575;
   --white-text: #ffffff;
@@ -9,7 +9,6 @@
   --size-heder: 14px;
   --height-heder: 1;
 }
-
 
 
 body {
@@ -448,9 +447,7 @@ button {
   rgba(47, 48, 58, 0.4) ), 
   url(../images/back-img.jpg);
   background-size: cover;
-  background-color: #C4C4C4;
-  
-  }
+  background-color: #C4C4C4;}
 
 .socials {
   display: flex;
@@ -462,11 +459,13 @@ button {
 
 .social-item {
   width: 44px;
-  justify-content: ;
+  justify-content: center;
+  display: flex;
 }
 
 .social-icon {
   width: 44px;
+  align-self: center;
 }
 
 .social-item:not(:last-child) {
@@ -479,6 +478,5 @@ button {
   background-color: var(--grey-back);
   border-radius: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-content: center;
   }
