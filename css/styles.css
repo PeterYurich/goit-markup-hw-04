@@ -10,7 +10,6 @@
   --height-heder: 1;
 }
 
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--black-text);
@@ -18,7 +17,6 @@ body {
   font-weight: 700;
   line-height: 1;
 }
-
 
 .list {
   list-style: none;
@@ -64,7 +62,8 @@ a {
 }
 
 .current {
-color: var(--accent-color);}
+  color: var(--accent-color);
+}
 
 .link {
   color: inherit;
@@ -80,7 +79,16 @@ color: var(--accent-color);}
 }
 
 .unvisible {
-  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .order {
@@ -182,12 +190,16 @@ color: var(--accent-color);}
 
 /* сбросы: */
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul, ol{
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -217,38 +229,44 @@ img {
 }
 
 .section-sec {
-padding-top: 0;
+  padding-top: 0;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px 15px 25px;
-  }
+}
 
 .header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #ECECEC;
-}  
+  border-bottom-color: #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
-  .site-nav {
-    display: flex;
-    margin-left: 93px;
-  }
+.site-nav {
+  display: flex;
+}
+
+.nav {
+  margin-left: 93px;
+}
 
 .header-contacts {
   display: flex;
   margin-left: auto;
-  }
+  align-items: center;
+}
 
-  .nav-item:not(:last-child) {
-    margin-right: 50px;
-  }
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 
-  .contact-item:first-child {
-    margin-right: 50px;
-  }
+.contact-item:first-child {
+  margin-right: 50px;
+  display: flex;
+}
 
 /* hero */
 
@@ -263,7 +281,7 @@ padding-top: 0;
 
 .hero {
   margin-bottom: 30px;
-  text-align: center;  
+  text-align: center;
 }
 
 .order {
@@ -286,7 +304,7 @@ padding-top: 0;
 }
 
 .adv-item {
-  flex-basis: calc((100% - (3*30px)) / 4);
+  flex-basis: calc((100% - (3 * 30px)) / 4);
 }
 
 /* чем мы занимаемся */
@@ -297,15 +315,14 @@ padding-top: 0;
 
 .gigs {
   display: flex;
-
-  }
+}
 
 .gig:not(:last-child) {
   margin-right: 30px;
-}  
+}
 
 .section-name {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* team */
@@ -315,14 +332,16 @@ padding-top: 0;
 }
 
 .stuff-item:not(:last-child) {
-  margin-right: 30px;}
+  margin-right: 30px;
+}
 
-.stuff-item { 
+.stuff-item {
   background-color: #fff;
   border-radius: 4px;
 }
 
-.name, .profession {
+.name,
+.profession {
   text-align: center;
 }
 
@@ -335,11 +354,11 @@ padding-top: 0;
 .footer {
   background-color: var(--dark-back);
   padding: 60px 0;
-  }
+}
 
 .logo-footer {
   margin-bottom: 50px;
-}  
+}
 
 .adress {
   margin-top: 20px;
@@ -364,7 +383,8 @@ padding-top: 0;
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 8px;}
+  margin-right: 8px;
+}
 
 /* portfolio */
 
@@ -373,8 +393,7 @@ padding-top: 0;
   flex-wrap: wrap;
   margin-bottom: -30px;
   margin-right: -30px;
-  }
-
+}
 
 .portfolio-name {
   color: var(--black-text);
@@ -392,7 +411,7 @@ padding-top: 0;
 .portfolio-item {
   margin-bottom: 30px;
   margin-right: 30px;
-  flex-basis: calc((100% - (3*30px)) / 3);
+  flex-basis: calc((100% - (3 * 30px)) / 3);
 }
 
 /* fixing bugs */
@@ -402,9 +421,8 @@ button {
 }
 
 .port-desc {
-  width: 370px;
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
 
@@ -419,8 +437,9 @@ button {
 /* HW-4  */
 
 .stuff-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
-
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .mail-header::before {
   content: " ";
@@ -429,7 +448,7 @@ button {
   height: 20px;
   background-image: url(../images/\/sprite-bw.svg#envelope);
   background-size: contain;
-  }
+}
 
 .adv-decor {
   width: 270px;
@@ -442,12 +461,15 @@ button {
   border-radius: 4px;
 }
 
-.hero-css {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
-  rgba(47, 48, 58, 0.4) ), 
-  url(../images/back-img.jpg);
+.hero-section {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/back-img.jpg);
   background-size: cover;
-  background-color: #C4C4C4;}
+  background-color: #c4c4c4;
+}
 
 .socials {
   display: flex;
@@ -479,4 +501,4 @@ button {
   border-radius: 50%;
   display: flex;
   align-content: center;
-  }
+}
