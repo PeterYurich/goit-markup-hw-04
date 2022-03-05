@@ -467,6 +467,7 @@ a {
   background-size: cover;
   padding: 200px 0;
   max-width: 1600px;
+  margin: auto;
 }
 
 /* advantages */
@@ -590,7 +591,6 @@ border-radius: 4px;
 
 .footer-container {
   display: flex;
-  /* align-items: center; */
 }
 
 .footer-column:not(:last-child) {
