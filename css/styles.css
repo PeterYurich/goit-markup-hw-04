@@ -444,16 +444,10 @@ a {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }  
 
-.mail-header::before {
-  content: " ";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/\/sprite-bw.svg#envelope);
-  background-size: contain;
+.mail-icon, .phone-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
-
-
 
 /* hero */
 
