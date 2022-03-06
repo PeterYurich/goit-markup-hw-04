@@ -535,7 +535,7 @@ border-radius: 4px;
   display: flex;
 }
 
-.client-item {
+.client-link {
   display: flex;
   width: 170px;
   height: 79px;
@@ -560,16 +560,15 @@ border-radius: 4px;
 fill: var(--accent-color);
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-}
+  }
 
 .client-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  fill: var(--accent-color);
 }
 
 /* footer */
