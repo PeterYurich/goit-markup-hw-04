@@ -16,23 +16,23 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a lang="en" href="" class="logo">Web<span class="logo-sec">Studio</span></a>
+            <a lang="en" href="" class="logo" >Web<span class="logo-sec">Studio</span></a>
             <nav class="nav">
                 <ul class="list site-nav">
-                    <li class="nav-item"><a class="link interactive" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class="current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-item"><a class="link interactive" href="">Контакт</a></li>
+                    <li class="nav-item"><a class=" header-element link interactive" href="./index.html">Студия</a></li>
+                    <li class="nav-item"><a class=" header-element current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item"><a class=" header-element link interactive" href="">Контакт</a></li>
                 </ul>
             </nav>
             <ul class="list header-contacts">
                 <li class="contact-item">
-                    <a class="mail-header interactive " href="mailto:info@devstudio.com">
+                    <a class="mail-header interactive header-element" href="mailto:info@devstudio.com">
                         <svg class="mail-icon" width=16 height="12">
                             <use href="./images/sprite-bw.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="contact-item"><a class="phone interactive" href="tel:+380961111111">
+                <li class="contact-item"><a class="phone interactive header-element" href="tel:+380961111111">
                         <svg class="phone-icon" width=10 height="16">
                             <use href="./images/sprite-bw.svg#smartphone"></use>
                         </svg>
@@ -46,7 +46,7 @@
             <div class="container">
                 <h2 class="unvisible">фильтр по типу работ</h2>
                 <ul class="filters list">
-                    <li class="filter-item"><button class="filter" type="button">Все</button></li>
+                    <li class="filter-item"><button class="filter current-filter" type="button">Все</button></li>
                     <li class="filter-item"><button class="filter" type="button">Веб-сайты</button></li>
                     <li class="filter-item"><button class="filter" type="button">Приложения</button></li>
                     <li class="filter-item"><button class="filter" type="button">Дизайн</button></li>
@@ -55,7 +55,7 @@
                 <h2 class="unvisible">портфолио</h2>
                 <ul class="portfolio list">
                     <li class="portfolio-item">
-                        <a href="">
+                        <a class="portfolio-link" href="">
                             <img src="./images/technokryak.jpg" width="370" alt="превью сайта" />
                             <div class="port-desc">
                                 <h3 class="portfolio-name">Технокряк</h3>
@@ -64,7 +64,7 @@
                         </a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="">
+                        <a class="portfolio-link" href="">
                             <img src="./images/disign.jpg" width="370" alt="превью сайта" />
                             <div class="port-desc">
                                 <h3 class="portfolio-name">Постер New Orlean vs Golden Star</h3>
@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="">
+                        <a class="portfolio-link" href="">
                             <img src="./images/restorant.jpg" width="370" alt="превью дизайна" />
                             <div class="port-desc">
                                 <h3 class="portfolio-name">Ресторан Seafood</h3>
@@ -149,14 +149,14 @@
                 <address class="adress">
                     г. Киев, пр-т Леси Украинки, 26
                 </address>
-                <ul>
+                <ul class="list">
                     <li class="mail-footer"><a class="contacts interactive"
                             href="mailto:info@devstudio.com">info@example.com</a></li>
                     <li><a class="contacts interactive" href="tel:+380961111111">+38 099 111 11 11</a></li>
                 </ul>
             </div>
-            <div class="footer-column-sec">
-                <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <div class="footer-column">
+                <strong class="footer-title">присоединяйтесь</strong>
                 <ul class="socials-footer list">
                     <li class="social-footer"><a href="" class="social-footer-item">
                             <svg class="social-icon" width="20" height="20">
