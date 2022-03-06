@@ -501,13 +501,6 @@ border-radius: 4px;
 
 .socials {
   display: flex;
-  justify-content: center;
-  /* margin: auto; */
-}
-
-.social-icon {
-  width: 44px;
-  align-self: center;
 }
 
 .social:not(:last-child) {
@@ -519,6 +512,7 @@ border-radius: 4px;
   height: 44px;
   border-radius: 50%;
   display: flex;
+  justify-content: center;
   align-content: center;
   fill: var(--grey-elements);
 }
@@ -580,7 +574,6 @@ fill: var(--accent-color);
 }
 
 .social-icon {
-  width: 44px;
   align-self: center;
 }
 
@@ -594,6 +587,7 @@ fill: var(--accent-color);
   border-radius: 50%;
   display: flex;
   align-content: center;
+  justify-content: center;
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
