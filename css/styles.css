@@ -544,7 +544,7 @@ border-radius: 4px;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  color: var(--accent-color);
+  color: var(--grey-elements);
 }
 
 .client-item:not(:last-child) {
@@ -557,8 +557,7 @@ border-radius: 4px;
   fill: var(--grey-elements);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-icon {
 fill: currentColor;
 }
 
