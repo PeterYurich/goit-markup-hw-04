@@ -16,12 +16,12 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a lang="en" href="" class="logo logo-header" >Web<span class="logo-sec">Studio</span></a>
+            <a lang="en" href="" class="logo logo-header">Web<span class="logo-sec">Studio</span></a>
             <nav class="nav">
                 <ul class="list site-nav">
-                    <li class="nav-item"><a class=" header-element link interactive" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class=" header-element current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-item"><a class=" header-element link interactive" href="">Контакт</a></li>
+                    <li class="nav-item"><a class="nav-link header-element link interactive" href="./index.html">Студия</a></li>
+                    <li class="nav-item"><a class="nav-link header-element current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link header-element link interactive" href="">Контакт</a></li>
                 </ul>
             </nav>
             <ul class="list header-contacts">
@@ -32,7 +32,8 @@
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="contact-item"><a class="phone interactive header-element contact-link" href="tel:+380961111111">
+                <li class="contact-item"><a class="phone interactive header-element contact-link"
+                        href="tel:+380961111111">
                         <svg class="phone-icon" width=10 height="16">
                             <use href="./images/sprite-bw.svg#smartphone"></use>
                         </svg>
@@ -56,7 +57,12 @@
                 <ul class="portfolio list">
                     <li class="portfolio-item">
                         <a class="portfolio-link" href="">
-                            <img src="./images/technokryak.jpg" width="370" alt="превью сайта" />
+                            <div class="wraper">
+                                <img src="./images/technokryak.jpg" width="370" alt="превью сайта" />
+                                <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и мервисов. Все это позволяет посетителю получить исчерпывающие сведения
+                                    о компании или частном лице.</p>
+                            </div>
                             <div class="port-desc">
                                 <h3 class="portfolio-name">Технокряк</h3>
                                 <p class="portfolio-type">Веб-сайт</p>
